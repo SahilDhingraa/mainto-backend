@@ -17,10 +17,10 @@ COPY . .
 
 # Set environment variables
 ENV POSTGRES_DB=postgres \
-    POSTGRES_USER=postgres.rdjzspdkdgkgngvetvqw \
-    POSTGRES_PASSWORD=\#D3t5Xvwtn*eRmRKFVyf\$\#Ws \
-    POSTGRES_HOST=aws-0-ap-south-1.pooler.supabase.com \
-    POSTGRES_PORT=6543 \
+    POSTGRES_USER=postgres \
+    POSTGRES_PASSWORD=postgres \
+    POSTGRES_HOST=localhost \
+    POSTGRES_PORT=5432 \
     EMAIL_HOST_USER=your_email \
     EMAIL_HOST_PASSWORD=your_password \
     DEFAULT_FROM_EMAIL=your_email
