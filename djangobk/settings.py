@@ -16,7 +16,22 @@ SECRET_KEY = 'django-insecure-l&6-ee2hsp$gi6&2p9th8o)4i@8qbxs2x$u+m%ik##o=%pjb@=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+# Enable HTTPS
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True  # Redirect all HTTP requests to HTTPS
+
+# Use secure cookies
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
+# Specify allowed hosts
+ALLOWED_HOSTS = ['mainto.in', 'www.mainto.in', 'localhost','127.0.0.1']
+
+# Enable HSTS (HTTP Strict Transport Security)
+SECURE_HSTS_SECONDS = 31536000  # 1 year
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
