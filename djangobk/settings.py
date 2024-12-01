@@ -25,7 +25,7 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
 # Specify allowed hosts
-ALLOWED_HOSTS = ['mainto.in', 'www.mainto.in', 'localhost','127.0.0.1']
+ALLOWED_HOSTS = ['mainto.in', 'www.mainto.in', 'localhost','127.0.0.1','api.mainto.in']
 
 # Enable HSTS (HTTP Strict Transport Security)
 SECURE_HSTS_SECONDS = 31536000  # 1 year
